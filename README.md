@@ -17,13 +17,19 @@ course :
 2. self.consistency
 
 
+work:
+
+1. Relative Work proportion
+2. 
+
 task:
 1. self.course
 2. self.Topic (Code from hashmap)
-3. (ENUM) (self.type) Reading for first time(watching lecture)/Learning/Solving/Assignment
+3. (self.type) Reading for first time(watching lecture)/Learning/Solving/Assignment  :::: A tuple of (Watching Lec, Learning, Solving, Coding, Writing Formally)
 4. Expected Time (FLOAT : HOURS)
 5. Difficulty
 6. Deadline (if any!)
+7. Description
 
 Time Data Type: float (30 min. multiples)
 
@@ -43,3 +49,7 @@ self.GenerateUseable :- List of slots which can be used!
 	ii) Simmulated Annealing
 4) ICS - file
 
+Energy Functions Arguments : 
+
+A list of timing slots and what could be done in those slots as a 6-member vector:
+(The watching lecture component of the work, the learning/memorizing part of the work, the problem-solving part of the work, the coding part of the work, the writing as an assignment part of the work, the proportion of the work!)
