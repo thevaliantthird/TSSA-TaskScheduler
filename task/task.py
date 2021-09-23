@@ -18,6 +18,7 @@ class task:
         self.diff = _diff
         self.deadline = _deadline
         self.desc = _desc
+        
     
     
     def GetTaskBracket(self, time)
