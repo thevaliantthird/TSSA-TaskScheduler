@@ -51,11 +51,12 @@ self.GenerateUseable :- List of slots which can be used!
 
 Energy Functions Arguments : 
 
-A list of timing slots and what could be done in those slots as a 7-member vector:
+A list of timing slots and what could be done in those slots as a 8-member vector:
 1. The watching lecture component of the work, 
 2. the learning/memorizing part of the work, 
 3. the problem-solving part of the work, 
 4. the coding part of the work, 
 5. the writing as an assignment part of the work, 
 6. the proportion of the work
-7. (Deadline - CurrTime)
+7. Difficulty
+8. (Deadline - CurrTime)
