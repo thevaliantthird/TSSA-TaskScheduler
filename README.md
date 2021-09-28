@@ -41,13 +41,13 @@ self.exception = list of tuples of times which can't be used!
 self.GenerateUseable :- List of slots which can be used!
 
 
-1) Energy Function
-2) Day end, task updater
-3) Time slot Input from User!
-3) Time Table Generation
-	i) Metropolis Algorithm
-	ii) Simmulated Annealing
-4) ICS - file
+1. Energy Function
+2. Day end, task updater
+3. Time slot Input from User!
+4. Time Table Generation
+	i. Metropolis Algorithm
+	ii. Simmulated Annealing
+5. ICS - file
 
 Energy Functions Arguments : 
 
@@ -57,6 +57,5 @@ A list of timing slots and what could be done in those slots as a 8-member vecto
 3. the problem-solving part of the work, 
 4. the coding part of the work, 
 5. the writing as an assignment part of the work, 
-6. the proportion of the work
-7. Difficulty
-8. (Deadline - CurrTime)
+6. Difficulty
+7. (Deadline - CurrTime)

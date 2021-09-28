@@ -1,13 +1,5 @@
-class taskBracket:
-    def __init__(self, _type, _time, _proportion, _timere ,parentid):
-        self.type = _type
-        self.time = _time
-        self.proportion = _proportion
-        self.id = parentid
-        self.timere = _timere
+import datetime
 
-    def GetVector(self):
-        return (self.type[0],self.type[1],self.type[2],self.type[3],self.type[4],self.proportion,self.timere)
 class task:
     def __init__(self,_id,_course, _topic, _type , _time, _diff,_deadline, _desc):
         self.id = _id
@@ -21,11 +13,16 @@ class task:
         
     
     
-    def GetTaskBracket(self, time)
-        if time/self.time < 0.1 :
-            return 0
-        else:
-            return taskBracket(self.type, time, time/self.time, self.id)
+    def GetTaskBracket(self, time):
+        dict = {}
+        dict["xc"] = self.type[3]
+        dict["xwt"] = self.type[0] 
+        dict["xr"] = self.type[1]
+        dict["xp"] = self.type[2]
+        dict["xt"] = self.type[4]
+        dict["diff"] = self.diff
+        dict["d"] = ((self.deadline-datetime.datetime.now()).total_seconds()//3600) * (time/self.time)
+        return dict
     
    
 
