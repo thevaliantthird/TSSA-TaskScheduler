@@ -6,10 +6,10 @@ import useri.interact
 def GetCombination(t2t, tb):
     s = np.sum(np.array(tb))
     z = (np.sum(np.array(list(t2t.values()))))
-    print(t2t)
+    
     taken = {}
     zi = t2t.copy()
-    print(s,z)
+    
     while s > 0:
         t = round(z*random.random())
         cum = 0
@@ -24,7 +24,7 @@ def GetCombination(t2t, tb):
                 zi[x]-=1
                 s -= 1
                 break
-    print(taken)
+    
     return taken
 
 def GetDifferentCombination(t2t,taken):
@@ -44,7 +44,10 @@ def GetDifferentCombination(t2t,taken):
     random.shuffle(z)
     for t in z:
         if t != chosen and c[t] >= takem[chosen]:
-            takem[t] += takem[chosen]
+            if t in takem.keys():
+                takem[t] += takem[chosen]
+            else:
+                takem[t] = takem[chosen]
             del takem[chosen]
             break 
     return takem

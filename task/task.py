@@ -20,7 +20,7 @@ class task:
         dict["xr"] = self.type[1]
         dict["xp"] = self.type[2]
         dict["xt"] = self.type[4]
-        dict["diff"] = self.diff
+        dict["diff"] = float(self.diff)
         dict["d"] = ((self.deadline-datetime.datetime.now()).total_seconds()//3600) * (time/self.time)
         return dict
     

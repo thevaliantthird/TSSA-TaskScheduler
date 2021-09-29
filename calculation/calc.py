@@ -167,6 +167,8 @@ def GetEnergy(tasks,task_list):
             for j in range(i,i+len(vec_list[i:])):
                 enrg+=energy(task_list[i],task_list[j],j-i+1) #mutual energy of all pairs (and self for same i,j)
         return enrg
+    
+    return total_energy(task_list)
 
 
     # #!!!Important Note- here i am setting deadline just for example!!!#

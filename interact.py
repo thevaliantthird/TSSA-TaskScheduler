@@ -110,7 +110,6 @@ class Manager:
             t2[i] = x.time
             i+=1
         for k in range(0,10):
-            print('done')
             z = GetCombination(t2,b)
             x,y = self.metropolis(t2,z)
             if y < minenergy:

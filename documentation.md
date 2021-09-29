@@ -17,10 +17,6 @@ course :
 2. self.consistency
 
 
-work:
-
-1. Relative Work proportion
-2. 
 
 task:
 1. self.course
@@ -47,7 +43,7 @@ self.GenerateUseable :- List of slots which can be used!
 4. Time Table Generation
 	i. Metropolis Algorithm
 	ii. Simmulated Annealing
-5. ICS - file
+5. ICS - file (TODO!)
 
 Energy Functions Arguments : 
 
